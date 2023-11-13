@@ -4,6 +4,8 @@ export  interface ProfileInfo{
     lastName:string;
     location:Location;
     skills:string[];
+    yearsOfExperience:number;
+    projects?:Projects;
 }
 
 export interface Location{
@@ -12,6 +14,11 @@ export interface Location{
     country:string;
 }
 
+export interface Projects{
+    name:string,
+    language: string[],
+    description: string;
+}
 
 export class Profile implements ProfileInfo{
     firstName:string = "Miko"
@@ -22,6 +29,7 @@ export class Profile implements ProfileInfo{
         province: "Cavite",
         country: "Philippines"
     }
-    skills:string[] = ["HTML","CSS","Javascript","React JS","Angular","NodeJS/Express","MongoDB","AWS"]    
+    skills:string[] = ["HTML","CSS","Javascript","React JS","Angular","NodeJS/Express","MongoDB","AWS"]
+    yearsOfExperience: number = 2;    
 }
 
