@@ -10,6 +10,7 @@ import { ServiceComponent } from './components/service/service.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     IonicModule.forRoot()
