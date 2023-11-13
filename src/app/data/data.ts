@@ -21,15 +21,15 @@ export interface Projects{
 }
 
 export class Profile implements ProfileInfo{
-    firstName:string = "Miko"
-    middleName?:string = "Viado"
-    lastName:string = "Recare"
-    location:Location = {
+    firstName = "Miko"
+    middleName = "Viado"
+    lastName = "Recare"
+    location = {
         city: "General Trias",
         province: "Cavite",
         country: "Philippines"
     }
-    skills:string[] = ["HTML","CSS","Javascript","React JS","Angular","NodeJS/Express","MongoDB","AWS"]
-    yearsOfExperience: number = 2;    
+    skills = ["HTML","CSS","Javascript","React JS","Angular","NodeJS/Express","MongoDB","AWS"]
+    yearsOfExperience = 2;    
 }
 
