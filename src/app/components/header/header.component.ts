@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  status = false;
-    addToggle(){
-      this.status = !this.status;       
+  status = true;
+    addToggle():boolean{
+     return this.status = !this.status;       
     }
 
 }
