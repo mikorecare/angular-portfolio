@@ -1,4 +1,7 @@
-
+.center-container{
+    display:flex;
+    width: max-content;
+}
 
 .nav-link{
     color:whitesmoke;
@@ -8,3 +11,10 @@
     color:white;
     text-shadow: 0 0 5px #00f, 0 0 5px #00f, 0 0 6px #00f;
 }
+
+@media screen and (max-width: 768px) {
+
+    .navbar-toggler{
+        margin-right:700px;
+    }
+  }

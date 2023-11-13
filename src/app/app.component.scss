@@ -1,8 +1,12 @@
 body{
     background:url('../assets/images/bg.png');
-    background-size:cover;
+    background-size:100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family:'Jost', Courier, monospace;
+    overflow: hidden;
+  position: relative!important;
+  overflow-y: scroll!important;
 }
 a, p{
     color:whitesmoke
@@ -12,3 +16,15 @@ a:hover{
     color:white;
     text-shadow: 0 0 5px #00f, 0 0 5px #00f, 0 0 6px #00f;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    body {
+      background-size: 100% auto;
+    }
+  }
