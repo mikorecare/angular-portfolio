@@ -35,6 +35,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss",
               {
                 "input": "node_modules/@ionic/angular/css/core.css"
@@ -70,7 +71,10 @@
                 "input": "src/theme/variables.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -136,9 +140,12 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+             
+              "src/styles.scss" 
             ],
-            "scripts": []
+            "scripts": [
+             
+            ]
           }
         },
         "ionic-cordova-serve": {
