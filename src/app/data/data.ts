@@ -1,24 +1,4 @@
-export interface ProfileInfo {
-    firstName: string;
-    middleName?: string;
-    lastName: string;
-    location: Location;
-    skills: string[];
-    yearsOfExperience: number;
-    projects?: Projects;
-  }
-  
-  export interface Location {
-    city: string;
-    province: string;
-    country: string;
-  }
-  
-  export interface Projects {
-    name: string;
-    language: string[];
-    description: string;
-  }
+import { ProfileInfo } from "./interfaces"
 
 export class Profile implements ProfileInfo{
     firstName = "Miko"
@@ -29,7 +9,18 @@ export class Profile implements ProfileInfo{
         province: "Cavite",
         country: "Philippines"
     }
-    skills = ["HTML","CSS","Javascript","React JS","Angular","NodeJS/Express","MongoDB","AWS"]
+    skills = [
+      {name:"MongoDB",level:5},
+      {name:"Angular",level:5},
+      {name:"Express",level:5},
+      {name:"NodeJS",level:5},
+      {name:"HTML5",level:5},
+      {name:"CSS",level:5},
+      {name:"Javascript",level:5},
+      {name:"AWS",level:3.5}
+    ]
     yearsOfExperience = 2;    
 }
+
+export { ProfileInfo }
 

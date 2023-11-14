@@ -3,9 +3,14 @@ export interface ProfileInfo {
     middleName?: string;
     lastName: string;
     location: Location;
-    skills: string[];
+    skills: Skills[];
     yearsOfExperience: number;
     projects?: Projects;
+  }
+
+  export interface Skills{
+    name:string;
+    level: number;
   }
   
   export interface Location {
