@@ -30,8 +30,11 @@ section{
             text-transform: uppercase;
             letter-spacing: 3px;
             margin-right: block 20px;
+            text-align: right;
+         
 
             .wrapper{
+                justify-content:end;
                 display: flex;
                 gap:20px;
             }
