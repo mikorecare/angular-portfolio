@@ -6,12 +6,12 @@ import { Profile, ProfileInfo } from 'src/app/data/data';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-info:ProfileInfo = new Profile()
-src:string = "logo-angular"
+info:any = new Profile()
+
   constructor(){
   }
 
   ngOnInit(){
-    
+    console.log(this.info)
   }
 }
