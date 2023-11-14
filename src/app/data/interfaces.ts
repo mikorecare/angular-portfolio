@@ -19,17 +19,3 @@ export interface ProfileInfo {
     language: string[];
     description: string;
   }
-
-export class Profile implements ProfileInfo{
-    firstName = "Miko"
-    middleName = "Viado"
-    lastName = "Recare"
-    location = {
-        city: "General Trias",
-        province: "Cavite",
-        country: "Philippines"
-    }
-    skills = ["HTML","CSS","Javascript","React JS","Angular","NodeJS/Express","MongoDB","AWS"]
-    yearsOfExperience = 2;    
-}
-
