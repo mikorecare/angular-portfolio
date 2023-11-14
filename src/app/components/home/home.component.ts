@@ -7,9 +7,11 @@ import { Profile, ProfileInfo } from 'src/app/data/data';
 })
 export class HomeComponent {
 info:ProfileInfo = new Profile()
+src:string = "logo-angular"
   constructor(){
   }
 
   ngOnInit(){
+    
   }
 }
