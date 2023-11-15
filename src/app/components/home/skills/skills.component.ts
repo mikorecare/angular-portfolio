@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Profile } from 'src/app/data/data';
+import { Profile, ionicIcons } from 'src/app/data/data';
 
 @Component({
   selector: 'app-skills',
@@ -11,10 +11,15 @@ export class SkillsComponent {
   finalSkills:any[] = []
   ngOnInit():void{
      this.finalSkills = this.skills.map((e)=>{
-
       let logoName = `logo-${e.name}`
-      return {...e,"logo":logoName.toLocaleLowerCase()}
+      if(ionicIcons.includes(e.name.toLocaleLowerCase())) 
+        {
+          return {...e,"logo":logoName.toLocaleLowerCase(),"type":"ionic"}
+        }
+      else{
+        return {...e,"logo":logoName.toLocaleLowerCase(),"type":"none"}
+      }
     })
-    console.log(this.finalSkills);
+    console.log(this.finalSkills)
   }
 }

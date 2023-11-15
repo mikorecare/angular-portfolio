@@ -5,11 +5,11 @@
         <ul class="skill-list" *ngFor="let skill of finalSkills">
           <li>
             <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
-              <div class="card-media" *ngIf="skill.logo !== 'logo-aws'">
+              <div class="card-media" *ngIf="skill.type === 'ionic'">
                 <ion-icon [name]="skill.logo"></ion-icon>
               </div>
-              <div class="card-media" *ngIf="skill.logo === 'logo-aws'">
-                <i class="fab fa-aws"></i>
+              <div class="card-media" *ngIf="skill.type !== 'ionic'">
+                <i class="fa fa-bars"></i>
               </div>
               <h2 class="card-title">{{skill.name}}</h2>
             </div>
