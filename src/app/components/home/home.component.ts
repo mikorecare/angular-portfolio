@@ -12,6 +12,5 @@ info:any = new Profile()
   }
 
   ngOnInit(){
-    console.log(this.info)
   }
 }
