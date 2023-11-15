@@ -8,8 +8,11 @@
               <div class="card-media" *ngIf="skill.type === 'ionic'">
                 <ion-icon [name]="skill.logo"></ion-icon>
               </div>
-              <div class="card-media" *ngIf="skill.type !== 'ionic'">
-                <i class="fa fa-bars"></i>
+              <div class="card-media" *ngIf="skill.type === 'special'">
+                <img [src]="skill.logo"/>
+              </div>
+              <div class="card-media" *ngIf="skill.type === 'none'">
+                <i [ngClass]="'fab fa-'+skill.logo"></i>
               </div>
               <h2 class="card-title">{{skill.name}}</h2>
             </div>
