@@ -49,6 +49,14 @@ export const ionicIcons = [
   "yahoo",
   "youtube"
 ]
+
+export const specialIcons = [
+  "mongodb",
+  "mongoose",
+  "mysql",
+  "express",
+  "postman"
+]
 export class Profile implements ProfileInfo{
     firstName = "Miko"
     middleName = "Viado"
@@ -67,7 +75,8 @@ export class Profile implements ProfileInfo{
       {name:"CSS3",level:5},
       {name:"Javascript",level:5},
       {name:"AWS",level:3.5},
-      {name:"NPM",level:4}
+      {name:"NPM",level:4},
+      {name:"php",level:3}
     ]
     yearsOfExperience = 2;    
 }
