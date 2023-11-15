@@ -15,9 +15,10 @@ export class Profile implements ProfileInfo{
       {name:"Express",level:5},
       {name:"NodeJS",level:5},
       {name:"HTML5",level:5},
-      {name:"CSS",level:5},
+      {name:"CSS3",level:5},
       {name:"Javascript",level:5},
-      {name:"AWS",level:3.5}
+      {name:"AWS",level:3.5},
+      {name:"NPM",level:4}
     ]
     yearsOfExperience = 2;    
 }
