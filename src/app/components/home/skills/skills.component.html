@@ -1,23 +1,50 @@
 <section class="section skill" aria-labelledby="skill-label">
-    <div class="container">
+    <div class="container-fluid">
       <div class="skill-content">
-        <h2 class="section-title headline-md" id="skill-label">My Skills</h2>
+        <h2 class="section-title headline-md" id="skill-label">Tech Stacks</h2>
         <ul class="skill-list" *ngFor="let skill of finalSkills">
           <li>
-            <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
+            <div class="card card-sm" [ngStyle]="{'background-color': skill.color}">
               <div class="card-media" *ngIf="skill.type === 'ionic'">
-                <ion-icon [name]="skill.logo"></ion-icon>
+                <ion-icon [name]="skill.logo" ></ion-icon><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
               </div>
               <div class="card-media" *ngIf="skill.type === 'special'">
-                <img [src]="skill.logo"/>
+                <img [src]="skill.logo"/><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
               </div>
               <div class="card-media" *ngIf="skill.type === 'none'">
-                <i [ngClass]="'fab fa-'+skill.logo"></i>
+                <i [ngClass]="'fab fa-'+skill.logo"></i><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
               </div>
-              <h2 class="card-title">{{skill.name}}</h2>
+              
             </div>
           </li>
         </ul>
+        <!-- <table>
+            <thead>
+            </thead>
+            <tbody>
+              <tr *ngFor="let skill of finalSkills; let i = index">
+                <td class="stacks">
+                  <div class="card card-sm" [ngStyle]="{'background-color': skill.color}">
+                    <div class="card-media" *ngIf="skill.type === 'ionic'">
+                      <ion-icon [name]="skill.logo" ></ion-icon><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
+                    </div>
+                    <div class="card-media" *ngIf="skill.type === 'special'">
+                      <img [src]="skill.logo"/><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
+                    </div>
+                    <div class="card-media" *ngIf="skill.type === 'none'">
+                      <i [ngClass]="'fab fa-'+skill.logo"></i><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
+                    </div>
+                    
+                  </div>
+                </td>
+                <td class="progress">
+                  <div class="progress-bar" [style.background-color]="getProgressBarColor(skill.level)" [style.width.%]="calculateProgressWidth(skill.level)">
+                    {{ skill.level }}
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
       </div>
     </div>
   </section>
