@@ -1,4 +1,4 @@
-import { ProfileInfo } from "./interfaces"
+import { ICertificates, ProfileInfo } from "./interfaces"
 
 export const ionicIcons = [
   "alipay",
@@ -74,12 +74,28 @@ export class Profile implements ProfileInfo{
       {name:"HTML5",level:5},
       {name:"CSS3",level:5},
       {name:"Javascript",level:5},
+      {name:"Bootstrap",level:5},
+      {name:"Github",level:4},
       {name:"AWS",level:3.5},
       {name:"NPM",level:4},
-      {name:"php",level:3}
+      {name:"Php",level:3},
+    ]
+    certificates = [
+      {
+        name: "Test Certification",
+        description:"This is a test description",
+        image: "assets/images/gb.png",
+        url:"https://google.com",
+        provider:"Test Provider",
+        date_earned:new Date("11-4-23"),
+        expiration:new Date("11-23-23"),
+        credential_id:"Test Credential ID"
+      }
     ]
     yearsOfExperience = 2;    
 }
+
+
 
 export { ProfileInfo }
 

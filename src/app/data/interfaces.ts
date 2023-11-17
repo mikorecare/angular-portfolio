@@ -1,26 +1,38 @@
 export interface ProfileInfo {
     firstName: string;
     middleName?: string;
-    lastName: string;
-    location: Location;
-    skills: Skills[];
-    yearsOfExperience: number;
-    projects?: Projects;
+    lastName?: string;
+    location: ILocation;
+    skills: ISkills[];
+    yearsOfExperience?: number;
+    projects?: IProjects;
+    certificates:ICertificates[];
   }
 
-  export interface Skills{
+  export interface ISkills{
     name:string;
     level: number;
   }
   
-  export interface Location {
+  export interface ILocation {
     city: string;
     province: string;
     country: string;
   }
   
-  export interface Projects {
+  export interface IProjects {
     name: string;
     language: string[];
     description: string;
+  }
+
+  export interface ICertificates{
+    name: string;
+    description:string;
+    image: string;
+    url:string;
+    provider:string;
+    date_earned:Date;
+    expiration?:Date;
+    credential_id?:string;
   }
