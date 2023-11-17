@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './components/home/about/about.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
+import { CertificationsComponent } from './components/home/certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SkillsComponent } from './components/home/skills/skills.component';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    CertificationsComponent
   ],
   imports: [
     NgbModule,
