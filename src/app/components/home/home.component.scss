@@ -57,17 +57,25 @@ main{
 
 }
 
+.btn{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    border-radius: 10px;
+    background: linear-gradient(to bottom left, #024280, #042B62, #051B4D, #041540, #031138, #030F35, #030D30);
+    box-shadow: 0 0 1px #00f, 0 0 2px #00f, 0 0 5px #00f;
+}
+
 .hero-banner img{
-    z-index: 1;
-    width: calc(max-content - 5px);
-    height: 50%;
-    clip-path: circle();
+    z-index: 0;
+    width: max-content;
+    border-radius: 50%;
 }
 .hero-banner .img-cont{
-    z-index: 0;
-    clip-path: circle();
-    background: linear-gradient(to bottom left,#0f4970,#00265f) ;
-    backdrop-filter: blur(20px);
+    z-index: 2;
+    background: linear-gradient(to bottom left,#042e4b,#00265f) ;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00f, 0 0 5px #00f, 0 0 6px #00f;
+    width: 40vw;
 }
 
 @media screen and (max-width: 768px) {

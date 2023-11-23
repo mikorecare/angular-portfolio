@@ -19,7 +19,7 @@ section{
             z-index: 1;
             width: 30%;
             height: 30%;
-            clip-path:ellipse();
+            border-radius: 20%;
         }
 
         .about-content{
@@ -36,11 +36,25 @@ section{
                 display: flex;
                 gap:20px;
 
-                .btn{
+                .success{
                     width: fit-content;
                     padding-left:auto;
                     padding-right:auto;
                     text-wrap:nowrap;
+                    color: whitesmoke;
+                    border-radius: 10px;
+                    background: linear-gradient(to bottom left, #024280, #042B62, #051B4D, #041540, #031138, #030F35, #030D30);
+                    box-shadow: 0 0 1px #00f, 0 0 2px #00f, 0 0 5px #00f;
+                }
+                .danger{
+                    background: linear-gradient(to bottom left, #333, #444, #555, #666, #777, #888, #999);
+                    width: fit-content;
+                    padding-left:auto;
+                    padding-right:auto;
+                    text-wrap:nowrap;
+                    color: whitesmoke;
+                    border-radius: 10px;
+          
                 }
             }
         }

@@ -1,17 +1,17 @@
 <section class="section skill" aria-labelledby="skill-label">
     <div class="container-fluid">
-      <div class="skill-content">
-        <h2 class="section-title headline-md" id="skill-label">Tech Stacks</h2>
-        <div *ngFor="let certificate of certificates">
+      <div class="certificate-content">
+        <h2 class="section-title headline-md" id="certification-label">Tech Stacks</h2>
+        <div class="card-container" *ngFor="let certificate of certificates">
             <div class="card">
-                <img class="card-img-top" [src]="certificate.image" alt="Card image cap">
+                <img class="card-img-top" [src]="certificate.image" [alt]="certificate.name">
                 <div class="card-body">
-                  <h5 class="card-title">{{certificate.name}}</h5>
+                  <h5 class="card-title"><span class="btn">{{certificate.provider}}</span>&nbsp;{{certificate.name}}</h5>
                   <p class="card-text">{{certificate.description}}</p>
-                  <div >
-                    <p>Issued {{certificate.date_earned | date : 'longDate'}}</p>
-                    <p>Credential ID : {{certificate.credential_id}}</p>
-                    <a [href]="certificate.url" class="btn btn-primary" target="_blank">Show Credential&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                  <div class="card-bottom">
+                    <span>Issued {{certificate.date_earned | date : 'MMMM YYYY'}}</span>
+                    <span>Credential ID : {{certificate.credential_id}}</span>
+                    <a [href]="certificate.url" class="btn" target="_blank">Show Credential&nbsp;<i class="fas fa-external-link-alt"></i></a>
                   </div>  
                 </div>
               </div>
