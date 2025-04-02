@@ -3,7 +3,7 @@
       <section class="section hero" aria-label="home">
         <div class="container-fluid">
           <div class="hero-content">
-            <p class="hero-subtitle">Hi! I'm {{info.firstName}}</p>
+            <div class="hero-subtitle">Hi! I'm {{info.firstName}}</div>
             <h1 class="text-lg-left">
               Crafting Full-Stack Solutions with
               <br/><strong class="text-primary">M</strong>ongoDB,
@@ -20,7 +20,7 @@
 
           <div class="hero-banner">
             <div class="img-cont">
-              <img src="assets/images/profpic.png"
+              <img [src]="imageSrc"
               alt="my pic" class="main-pic">
             </div>
           </div>

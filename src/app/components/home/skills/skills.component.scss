@@ -7,7 +7,7 @@ section{
     position: relative;
     padding-block-start: calc(var(--section-padding) + 60px);
     text-align: center;
-
+    
     height: max-content;
     // background: linear-gradient(to bottom left, #024280, #042B62, #051B4D, #041540, #031138, #030F35, #030D30);
     align-items: center;
@@ -16,9 +16,18 @@ section{
     padding-bottom:3rem;
 }
 
+ion-icon{
+    margin-top:20px;
+    color:black;
+}
+
+img{
+    margin-top:20px;
+    color:black;
+}
 .container-fluid{
         display: flex;
-        justify-content:center;
+        justify-content:start;
         gap:3rem;
 
     .skill-content{
@@ -26,23 +35,29 @@ section{
         text-align: left;
         justify-content: flex-start;
         .skill-list{
-            display:inline-flex;
-            padding-left: 1vw;
-            padding-right: 1vw;
+            margin-bottom: 0;
+            display: inline-flex;
+                flex-direction: column;
+                width: max-content;
             .card{
-                height: max-content;
-                border-radius: 30px;
-                width: 7rem;
-                align-items: center;
-                
+                border:none;
+                width: 6rem;
                 .card-media{
+                    font-size: 50px;
                     display: flex;
-                    align-items: center;
-                    gap:2px;
-                    
-                    span{
-                        margin-top:5px;
-                    }
+                    align-items: center;  
+                    max-height: 2.5rem;
+                    gap:5px ;
+                        
+                        i{  
+                          font-size: 48px;
+                          color:black;
+                        }        
+                        // span{
+                        //     vertical-align: middle;
+                        //     height: 100%;
+                        //     display: none;
+                        // }
                 }
           
             }
@@ -96,8 +111,9 @@ section{
     
     
     }
-    
+
 }
+
 
 @media screen and (max-width: 768px), screen and  (max-width:1000px) {
     section{

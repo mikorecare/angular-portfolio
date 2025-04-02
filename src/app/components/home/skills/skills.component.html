@@ -2,22 +2,26 @@
     <div class="container-fluid">
       <div class="skill-content">
         <h2 class="section-title headline-md" id="skill-label">Tech Stacks</h2>
-        <ul class="skill-list" *ngFor="let skill of finalSkills">
-          <li>
-            <div class="card card-sm" [ngStyle]="{'background-color': skill.color}">
+        <div class="skill-list" *ngFor="let skill of finalSkills">
+            <div class="card card-sm">
               <div class="card-media" *ngIf="skill.type === 'ionic'">
-                <ion-icon [name]="skill.logo" ></ion-icon><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
+                <ion-icon [name]="skill.logo" ></ion-icon>
+                <!-- <span>
+                  {{skill.name}}
+                </span> -->
               </div>
               <div class="card-media" *ngIf="skill.type === 'special'">
-                <img [src]="skill.logo"/><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
+                <img [src]="skill.logo"/>
+                <!-- <span>{{skill.name}}</span> -->
               </div>
               <div class="card-media" *ngIf="skill.type === 'none'">
-                <i [ngClass]="'fab fa-'+skill.logo"></i><span class="card-title badge badge-pill badge-light">{{skill.name}}</span>
+                <i [ngClass]="'fab fa-'+skill.logo"></i>
+                <!-- <span>{{skill.name}}</span> -->
               </div>
               
             </div>
-          </li>
-        </ul>
+
+          </div>
         <!-- <table>
             <thead>
             </thead>
